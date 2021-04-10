@@ -80,4 +80,3 @@ for(int i = 0; i < N; i++){
     fgets(line, sizeof(line), fp); //read in at most sizeof(line) characters
                                    //(including '\0') into line.
 }
-
