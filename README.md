@@ -31,7 +31,7 @@ Part 1
 ======
 Write a function with the signature 
 
-void read_in_terms(struct term **terms, int *pnterms, char *filename);
+    void read_in_terms(struct term **terms, int *pnterms, char *filename);
 
 The function takes in a pointer to a pointer to struct term, a pointer to an int, and the name of a file that is formatted like cities.txt.
 
@@ -42,7 +42,7 @@ The terms should be sorted in lexicographic order.
 Part 2(a)
 =========
 Write a function with the signature
-int lowest_match(struct term *terms, int nterms, char *substr);
+    int lowest_match(struct term *terms, int nterms, char *substr);
 
 The function returns the index in terms of the first term in lexicographic ordering that matches the string substr.
 
@@ -53,7 +53,8 @@ You can assume that terms is sorted in ascending lexicographic ordering.
 Part 2(b)
 =========
 Write a function with the signature
-int highest_match(struct term *terms, int nterms, char *substr);
+
+    int highest_match(struct term *terms, int nterms, char *substr);
 
 The function returns the index in terms of the last term in lexicographic order that matches the string substr.
 
@@ -65,7 +66,7 @@ Part 3
 ======
 Write a function with the signature 
 
-void autocomplete(struct term **answer, int *n_answer, struct term *terms, int nterms, char *substr);
+    void autocomplete(struct term **answer, int *n_answer, struct term *terms, int nterms, char *substr);
 
 The function takes terms (assume it is sorted lexicographically), the number of terms nterms, and the query string substr, and places the answers in answer, with *n_answer being the number of answers. The answer should be sorted by weight.
 
