@@ -21,6 +21,7 @@ To accomplish the task, you will:
 * Extract the top matching terms by weight
 
 Throughtout, you will use the following struct:
+
     struct term{
         char term[200]; // assume terms are not longer than 200
         double weight;
