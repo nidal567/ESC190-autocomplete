@@ -75,10 +75,13 @@ Reading in files
 The following code can be used to read in N lines of a text file line-by-line.
 
 char line[200];
+
 FILE *fp = fopen(filename, "r");
 
 for(int i = 0; i < N; i++){
+
     fgets(line, sizeof(line), fp); //read in at most sizeof(line) characters
+    
                                    //(including '\0') into line.
                                    
 }
