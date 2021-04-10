@@ -21,10 +21,10 @@ To accomplish the task, you will:
 * Extract the top matching terms by weight
 
 Throughtout, you will use the following struct:
-struct term{
-    char term[200]; // assume terms are not longer than 200
-    double weight;
-};
+    struct term{
+        char term[200]; // assume terms are not longer than 200
+        double weight;
+    };
 
 
 Part 1
@@ -42,6 +42,7 @@ The terms should be sorted in lexicographic order.
 Part 2(a)
 =========
 Write a function with the signature
+
     int lowest_match(struct term *terms, int nterms, char *substr);
 
 The function returns the index in terms of the first term in lexicographic ordering that matches the string substr.
